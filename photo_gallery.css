@@ -1,0 +1,448 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: black;
+}
+
+/* ++++++++++++++++++++++ FONT ++++++++++++++++++++++ */
+p {
+    font-size: 1.25em;
+}
+figcaption, label, input, small {
+    font-size: 1em
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+nav a {
+    font-size: 1.5em;
+    font-weight: bold;
+    flex-shrink: 2;
+}
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color:  #007d7b;
+    background-color: white;
+    padding: 10px;
+}
+h2 {
+    font-size: 2em;
+}
+/* ++++++++++++++++++++++ BODY ++++++++++++++++++++++ */
+body, header, h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+body {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+main {
+    margin-top: 0px;  
+}
+.gallery_grid, .about {
+    margin-top: 0px;
+}
+/* ++++++++++++++++++++++ NAV BAR ++++++++++++++++++++++ */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 0;
+}
+nav ul{
+    background-color: #000000;
+}
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+nav li a {
+    text-decoration: none;
+    color:#ffffff;
+}
+/* ++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++ */
+.about {
+    background-color: white; 
+    margin-top: 0px;
+}
+.about h2 {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.about p {
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    background-color: white; 
+}
+/* ++++++++++++++++++++++ GALLERY GRID ++++++++++++++++++++++ */
+.gallery_grid {
+    margin-top: -10px;
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    background-color: #ffffff;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, [col-start] max-content [col-end]);
+    grid-template-areas:
+        "a b c" 
+        "d e f"
+        "g h i"
+        "j k l";
+    gap: 10px;
+}
+.gallery_grid img {
+    width: 100%;
+}
+.Chile {
+    grid-area: a;
+}
+.Chile p {
+    margin-top: -40px;
+    color: #ffffff;
+}
+.Guatemala {
+    grid-area: b;
+}
+.Guatemala p {
+    z-index: 10;
+    position: relative;
+    margin-bottom: -40px;
+}
+.Guatemala img {
+    z-index: 1;
+}
+.Hawaii {
+    grid-area: c;
+}
+.Hawaii p {
+    margin-top: -40px;
+    color: #ffffff;
+}
+.Iran {
+    grid-area: d;
+}
+.Iran p {
+    z-index: 10;
+    position: relative;
+    margin-bottom: -40px;
+}
+.Ireland {
+    grid-area: e;
+}
+.Ireland p {
+    z-index: 10;
+    position: relative;
+    margin-bottom: -40px;
+}
+.Italy {
+    grid-area: f;
+}
+.Italy p {
+    margin-top: -40px;
+}
+.Moab_Desert {
+    grid-area: g;
+}
+.Moab_Desert p {
+    margin-top: -40px;
+    color: #ffffff;
+}
+.Rocky_Mountains {
+    grid-area: h;
+}
+.Rocky_Mountains p {
+    z-index: 10;
+    position: relative;
+    margin-bottom: -40px;
+}
+.Switzerland {
+    grid-area: i;
+}
+.Switzerland p{
+    z-index: 10;
+    position: relative;
+    margin-bottom: -40px;
+}
+.UK {
+    grid-area: j;
+}
+.UK p {
+    z-index: 10;
+    position: relative;
+    margin-bottom: -40px;
+}
+.USA {
+    grid-area: k;
+}
+.USA p {
+    z-index: 10;
+    position: relative;
+    margin-bottom: -40px;
+}
+.Wyoming {
+    grid-area: l;
+}
+.Wyoming p {
+    z-index: 10;
+    position: relative;
+    margin-bottom: -40px;
+    color: #ffffff;
+}
+/* ++++++++++++++++++++++ CONTACT FORMS ++++++++++++++++++++++ */
+.contact_form {
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.contact_form h2{
+    text-align: center;
+}
+.contact_form p{
+    text-align: center;
+}
+.contact_form input {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+}
+.contact_form label{  
+    text-align: left;  
+}
+.other_i {
+    text-align: left;
+    margin-top: 20px;
+}
+input::placeholder {
+    background-color: #ffffff;
+    color: #007d7b; 
+    font-weight: bold;
+}
+.submit {
+    text-align: center; 
+}
+.submit input{
+    background-color: #007d7b;
+    color: #ffffff; 
+    text-align: center;
+    border: 1px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 20px;
+}
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+}
+/* ++++++++++++++++++++++ MEDIA QUERIES ++++++++++++++++++++++ */
+@media screen and (max-width: 880px){
+    h1 {
+        font-size: 2em;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    .gallery_grid {
+        margin-top: -10px;
+        padding: 20px;
+        display: grid;
+        text-align: center;
+        background-color: #ffffff;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, [col-start] max-content [col-end]);
+        grid-template-areas:
+            "a b"
+            "c d" 
+            "e f"
+            "g h"
+            "i j"
+            "k l";
+        gap: 10px;
+    }
+    .gallery_grid img {
+        max-width: 80%;
+    }
+    .Chile p {
+        margin-top: -30px;
+    }
+    .Guatemala p {
+        margin-bottom: -30px;
+    }
+    .Hawaii p {
+        margin-top: -30px;
+    }
+    .Iran p {
+        margin-bottom: -30px;
+    }
+    .Ireland p {
+        margin-bottom: -30px;
+    }
+    .Italy p {
+        margin-top: -30px;
+    }
+    .Moab_Desert p {
+        margin-top: -30px;
+    }
+    .Rocky_Mountains p {
+        margin-bottom: -30px;
+    }
+    .Switzerland p{
+        margin-bottom: -30px;
+    }
+    .UK p {
+        margin-bottom: -30px;
+    }
+    .USA p {
+        margin-bottom: -30px;
+    }
+    .Wyoming p {
+        margin-bottom: -30px;
+    }
+    .caption {
+      font-size: 12px;
+    }
+    .contact_form {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .contact_form input{
+        width: 100%;
+        margin-top: 5px;
+        padding-right: 5px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .submit input{
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 0px;
+    }
+    input::placeholder {
+        font-size: 15px;
+    }
+    footer {
+        color: #ffffff;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 485px){
+    nav {
+        justify-content: center;
+    }
+    nav a{
+        font-size: 12px;
+        text-align: center;
+    }
+    .gallery_grid {
+        margin-top: -10px;
+        padding: 20px;
+        display: grid;
+        text-align: center;
+        background-color: #ffffff;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, [col-start] max-content [col-end]);
+        grid-template-areas:
+            "a" 
+            "b" 
+            "c" 
+            "d" 
+            "e" 
+            "f" 
+            "g"
+            "h" 
+            "i"  
+            "j" 
+            "k" 
+            "l" ;
+        gap: 10px;
+    }
+    .gallery_grid img {
+        width: 80%;
+    }
+    .Chile p {
+        margin-top: -20px;
+    }
+    .Guatemala p {
+        margin-bottom: -20px;
+    }
+    .Hawaii p {
+        margin-top: -20px;
+    }
+    .Iran p {
+        margin-bottom: -20px;
+    }
+    .Ireland p {
+        margin-bottom: -20px;
+    }
+    .Italy p {
+        margin-top: -20px;
+    }
+    .Moab_Desert p {
+        margin-top: -20px;
+    }
+    .Rocky_Mountains p {
+        margin-bottom: -20px;
+    }
+    .Switzerland p{
+        margin-bottom: -20px;
+    }
+    .UK p {
+        margin-bottom: -20px;
+    }
+    .USA p {
+        margin-bottom: -20px;
+    }
+    .Wyoming p {
+        margin-bottom: -20px;
+    }
+    .caption {
+        font-size: 8px;
+    }
+    .contact_form {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .contact_form input{
+        width: 100%;
+        margin-top: 5px;
+        padding-right: 5px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    .submit input{
+        padding-bottom: 10px;
+        margin-top: 0px;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+    footer {
+        color: #ffffff;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
